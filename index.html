@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+  <script src="node_modules/jquery/jquery.js"></script>
+<link rel="stylesheet" href="./css.css">
+  <style>
+  body {
+    text-align: center;
+    align: center;
+	font-family: 'Roboto', sans-serif;
+}
+      input[type=text] {
+        width: 250px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius:10px;
+        border-color: #fff;
+        background-color: #2C2F33;
+		color: white;
+		font-family: 'Roboto', sans-serif;
+      }
+	  .input-res{
+          width: 100%;
+          max-width: 500px;
+}
+ .footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 0px; 
+       width: 100%;
+   }  
+</style>
+    <meta charset="UTF-8">
+    <title>String Converter</title>
+  </head>
+  <body style="background-color:#2C2F33; color:white; ">
+  <script src="main.js"> </script>
+    <h1>Input string:</h1>
+	<br>
+	<div class="containerr" id="divv">
+	<input class="input-res" required placeholder="String to convert" type="text" id="string">
+	
+	</div>
+	<br>
+	<h1>Select Option:</h1>
+	<br>
+	<form>
+		<input type="radio" name="option" value="upper" checked> All Upper Case<br>
+		<input type="radio" name="option" value="lower"> All Lower Case<br>
+		<input type="radio" name="option" value="mixed"> Mixed
+	</form>
+	<br>
+	<button class="waves-effect waves-light btn-large" onClick="convert()">Convert</button>
+	<p id="final"></p>
+	<div class="footer">App icon made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </body>
+</html>

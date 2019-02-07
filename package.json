@@ -1,0 +1,44 @@
+{
+    "name": "stringconverter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "electron-toolkit": "electron ./node_modules/electron-toolkit"
+    },
+    "author": "ks0908/Krzysztof Szypula",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^4.0.3",
+        "electron-builder": "^20.38.5",
+        "electron-toolkit": "^1.0.24"
+    },
+    "build": {
+        "appId": "com.electron.stringconverter",
+        "copyright": "Copyright © 2019 ks0908/Krzysztof Szypuła",
+        "productName": "String Converter",
+        "electronVersion": "4.0.3",
+        "asar": true,
+        "directories": {
+            "app": "C:\\Users\\Dell\\Desktop\\other\\stringconverter",
+            "output": "dist"
+        },
+        "win": {
+            "target": [
+                {
+                    "target": "nsis",
+                    "arch": [
+                        "x64"
+                    ]
+                },
+                {
+                    "target": "portable",
+                    "arch": [
+                        "x64"
+                    ]
+                }
+            ]
+        }
+    }
+}
